@@ -2,58 +2,45 @@ package com.example.mymessages;
 
 
 public class Person {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String phoneNumber;
-    private String image;
+    private String Name;
+    private String Description;
+    private String Time;
+    /*private String Image;*/
 
-    public Person(String firstName, String lastName, String email, String phoneNumber, String image) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.image = image;
+
+    public Person(String Name, String Description,String Time) {
+        this.Name = Name;
+        this.Description = Description;
+        this.Time = Time;
+        /*this.Image = Image;*/
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return Name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setDescription(String Description) {
+        this.Description = Description;
     }
 
-    public String getEmail() {
-        return email;
+    public String getTime() {
+        return Time;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTime(String Time) {
+        this.Time = Time;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    /*public String getImage() { return Image;*/
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-}
+    /*public void setImage(String Image) { this.Image = Image;}*/
 

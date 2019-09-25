@@ -8,44 +8,46 @@
     android:weightSum="3"
     android:background="@color/colorPrimaryDark">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-        <!--android:background="@mipmap/circle_pic"
-        tools:layout_conversion_absoluteHeight="72dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_conversion_absoluteWidth="95dp"-->
-
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/Name"
         style="@style/TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:hint="Email"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:hint="Name"
         android:padding="5dp"
-        android:text="Email: shadslattery@gmail.com"/>
+        android:text="Ben" />
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/Description"
         style="@style/TextAppearance.AppCompat.Small"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:hint="Address"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:hint="Description"
         android:padding="5dp"
-        android:text="2011 Chestnut St., Philly PA 58955"/>
+        android:text="This is a Text Message" />
 
     <TextView
-        android:id="@+id/time"
+        android:id="@+id/Time"
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:hint="Name"
+        android:hint="Time"
         android:padding="5dp"
-        android:text="Shad Slattery"/>
+        android:text="5:00am"/>
 
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="154dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlue"/>
 
 </LinearLayout>

@@ -35,8 +35,17 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.PeopleView
     public void onBindViewHolder(@NonNull PeopleViewHolder holder, int position) {
         Person person = peopleList.get(position);
 
-        String firstName = person.getFirstName();
-        holder.tvName.setText(firstName);
+        String Name = person.getName();
+        holder.tvName.setText(Name);
+
+        String Description = person.getDescription();
+        holder.tvDescription.setText(Description);
+
+        /*String Image = person.getImage();
+        holder.tvImage.setText(Image);*/
+
+        String Time = person.getTime();
+        holder.tvTime.setText(Time);
     }
 
     @Override
@@ -45,14 +54,18 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.PeopleView
     }
 
     class PeopleViewHolder extends RecyclerView.ViewHolder {
-        TextView tvName;
+        TextView tvName,tvDescription, tvTime; /*tvImage*/
 
 
         public PeopleViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvName = itemView.findViewById(R.id.name);
+            tvName = itemView.findViewById(R.id.Name);
+            tvDescription = itemView.findViewById(R.id.Description);
+            /*tvImage = itemView.findViewById(R.id.Image);*/
+            tvTime = itemView.findViewById(R.id.Time);
         }
-    }
 
 
-}
+            }
+        }
+
